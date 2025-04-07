@@ -1,0 +1,46 @@
+.tableContainer {
+    overflow-x: auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.residentsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.residentsTable th,
+.residentsTable td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.residentsTable th {
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+}
+
+.residentsTable tr:hover {
+    background-color: #f8f9fa;
+}
+
+.paid {
+    color: #00c853;
+    font-weight: 500;
+}
+
+.unpaid {
+    color: #ff1744;
+    font-weight: 500;
+}
+
+.loading {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+}

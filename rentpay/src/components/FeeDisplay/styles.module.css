@@ -1,0 +1,95 @@
+.container {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.searchBox {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.input {
+    flex: 1;
+    padding: 0.8rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #646cff;
+}
+
+.searchButton {
+    padding: 0.8rem 1.5rem;
+    background: #646cff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.searchButton:hover {
+    background: #535bf2;
+}
+
+.searchButton:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.resultBox {
+    border-top: 1px solid #eee;
+    padding-top: 1.5rem;
+}
+
+.detailItem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    color: #666;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.status {
+    text-align: center;
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+}
+
+.paid {
+    color: #00c853;
+}
+
+.unpaid {
+    color: #ff1744;
+}
+
+.payButton {
+    width: 100%;
+    padding: 1rem;
+    background: #00c853;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.payButton:hover {
+    background: #009624;
+}
