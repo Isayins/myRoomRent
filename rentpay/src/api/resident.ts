@@ -1,7 +1,9 @@
-import { Resident } from '../types/feeTypes';
+import {PageData, Resident} from '../types/feeTypes';
+import axios from 'axios';
 
-export const getAllResidents = async (): Promise<Resident[]> => {
-    const response = await fetch('http://localhost:8080/api/fees/residents');
-    if (!response.ok) throw new Error('Failed to fetch residents');
-    return response.json();
+const API_BASE = 'http://localhost:8080/api/fees/residents';
+
+export const getResidentsPage = async (page = 1, size = 10): Promise<PageData<Resident>> => {
+    const response = await axios.get<PageData<Resident>>(API_BASE );
+    return response.data;
 };

@@ -13,3 +13,11 @@ export interface Resident {
     electricFee: number;
     paid: boolean;
 }
+
+export interface PageData<T> {
+    records: T[];
+    total: number;
+    size: number;
+    current: number;
+    pages: number;
+}
